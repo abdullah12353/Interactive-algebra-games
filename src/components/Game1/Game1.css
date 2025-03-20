@@ -1,0 +1,102 @@
+/* src/components/Game1/Game1.css */
+
+.game1-container {
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    margin: 20px;
+    background-color: #fafafa;
+  }
+  
+  .instructions {
+    font-size: 0.95rem;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  .game-area {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+  
+  .side {
+    width: 25%;
+    min-height: 150px;
+    padding: 10px;
+    border: 2px dashed #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+  }
+  
+  .drop-zone {
+    min-height: 100px;
+    padding: 10px;
+    border: 2px dashed #ddd;
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
+  }
+  
+  .drop-zone.hovered {
+    background-color: #e8f0fe;
+  }
+  
+  .center-scale {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 100px;
+  }
+  
+  .scale-display {
+    /* The rotation is handled by react-spring inline styles */
+  }
+  
+  .terms-container {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+  }
+  
+  .term {
+    padding: 5px 10px;
+    background-color: #e2e2ff;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    cursor: grab;
+    user-select: none;
+  }
+  
+  .controls {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .controls button {
+    margin: 5px;
+    padding: 8px 12px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .controls button:hover {
+    background-color: #0056b3;
+  }
+  
+  .feedback {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #007b00;
+  }
+  
+  .available-terms {
+    margin-top: 20px;
+  }
+  

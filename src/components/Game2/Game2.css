@@ -1,0 +1,128 @@
+.game2-container {
+    padding: 20px;
+    margin: 20px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    background-color: #fdfdfd;
+  }
+  
+  .instructions {
+    font-size: 0.95rem;
+    color: #333;
+    margin-bottom: 15px;
+    line-height: 1.4;
+  }
+  
+  .game2-area {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-bottom: 20px;
+  }
+  
+  .ingredients-pool {
+    width: 40%;
+  }
+  
+  .ingredients-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .ingredient {
+    padding: 8px 12px;
+    background-color: #e2e2ff;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    cursor: grab;
+    user-select: none;
+    font-size: 1rem;
+    transition: background-color 0.2s ease;
+  }
+  
+  .ingredient:hover {
+    background-color: #d0d0ff;
+  }
+  
+  .cauldron-section {
+    width: 40%;
+    text-align: center;
+  }
+  
+  .cauldron-dropzone {
+    position: relative;
+    padding: 20px;
+    border: 2px dashed #aaa;
+    border-radius: 8px;
+    background-color: #f0f0f0;
+    min-height: 150px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cauldron-dropzone.hovered {
+    background-color: #e0e0e0;
+  }
+  
+  .cauldron-visual {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .cauldron-visual img {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .simplified-expression {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #ff6600;
+    pointer-events: none;
+  }
+  
+  .controls {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .controls button {
+    padding: 10px 15px;
+    font-size: 1rem;
+    margin: 0 5px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .controls button:hover {
+    background-color: #0056b3;
+  }
+  
+  .feedback {
+    text-align: center;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #007b00;
+  }
+  
+  .spellbook {
+    background-color: #e8f4fd;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    color: #333;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  

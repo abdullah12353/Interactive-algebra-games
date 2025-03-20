@@ -1,0 +1,171 @@
+/* Container and overall style */
+.game4-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #0c0c1d;
+    color: #00ffff;
+    font-family: 'Orbitron', 'Courier New', monospace;
+    background-image: radial-gradient(circle at 50% 50%, #1a1a3a 0%, #0c0c1d 100%);
+    overflow: hidden;
+    position: relative;
+    padding: 16px;
+  }
+  
+  /* Header */
+  .game4-header {
+    text-align: center;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #00ffff;
+  }
+  .game4-title {
+    font-size: 32px;
+    margin: 0;
+    text-shadow: 0 0 10px #00ffff;
+  }
+  .game4-subtitle {
+    font-size: 16px;
+    margin-top: 4px;
+  }
+  
+  /* Main Layout */
+  .game4-main {
+    display: flex;
+    flex: 1;
+    gap: 16px;
+    margin-top: 16px;
+  }
+  
+  /* Expression Plate (Magical Parchment) */
+  .expression-plate {
+    flex: 1;
+    background-color: rgba(0, 20, 40, 0.7);
+    border: 1px solid #00ffff;
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .unsimplified-expression {
+    font-size: 20px;
+    margin-bottom: 16px;
+    white-space: nowrap;
+    overflow-x: auto;
+  }
+  .terms-pool {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  /* Draggable Term */
+  .draggable-term {
+    padding: 8px 12px;
+    background-color: #e2e2ff;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    cursor: grab;
+    user-select: none;
+    font-size: 18px;
+    transition: background-color 0.2s;
+  }
+  .draggable-term:hover {
+    background-color: #d0d0ff;
+  }
+  
+  /* Simplification Zone (Cauldron) */
+  .simplification-zone {
+    flex: 1;
+    background-color: rgba(0, 20, 40, 0.7);
+    border: 1px solid #00ffff;
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .drop-zone {
+    width: 100%;
+    min-height: 120px;
+    border: 2px dashed #00ffff;
+    border-radius: 8px;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s;
+  }
+  .drop-zone.hovered {
+    background-color: rgba(0, 255, 255, 0.1);
+  }
+  .grouped-terms {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .grouped-term {
+    padding: 8px 12px;
+    background-color: #00ffff;
+    border: 1px solid #007b7b;
+    border-radius: 4px;
+    font-size: 18px;
+    color: #000;
+    text-shadow: 0 0 5px #ffffff;
+  }
+  
+  /* Control Buttons */
+  .controls {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 16px;
+  }
+  .control-button {
+    padding: 8px 16px;
+    background-color: rgba(0, 50, 100, 0.7);
+    border: 2px solid #00ffff;
+    border-radius: 4px;
+    color: #00ffff;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  .control-button:hover {
+    background-color: rgba(0, 255, 255, 0.5);
+  }
+  
+  /* Simplified Expression Display */
+  .simplified-expression-display {
+    text-align: center;
+    margin-bottom: 16px;
+  }
+  .simplified-expression-display h3 {
+    margin: 0;
+    font-size: 20px;
+  }
+  .simplified-expression-display p {
+    font-size: 24px;
+    margin: 4px 0 0;
+  }
+  
+  /* Message */
+  .message {
+    margin-top: 8px;
+    padding: 8px;
+    background-color: rgba(0, 255, 255, 0.2);
+    border-radius: 4px;
+    font-size: 18px;
+    text-align: center;
+  }
+  
+  /* Footer */
+  .game4-footer {
+    text-align: center;
+    padding: 12px;
+    border-top: 1px solid #00ffff;
+    font-size: 14px;
+  }
+  
